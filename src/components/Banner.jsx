@@ -62,7 +62,7 @@ function Banner() {
           </div>
           <div className="flex gap-3 justify-center md:justify-start">
           <button className="mt-6 px-8 py-3 flex gap-2 items-center font-medium bg-[#3B63FB] text-white hover:text-white rounded cursor-pointer shadow-md hover:bg-blue-700 transition">
-          <PiDownloadSimpleDuotone className="text-lg" />Resume
+          <PiDownloadSimpleDuotone href="../../public/resume.pdf" className="text-lg" />Resume
           </button>
           <button className="mt-6 flex items-center gap-2 px-8 py-3 font-medium border-[#3B63FB] text-black hover:text-white border-l-2 border-t-2 bg-white border-1 rounded cursor-pointer shadow-md hover:bg-blue-700 transition">
           <RiContactsBook3Line className="text-lg" />Contact

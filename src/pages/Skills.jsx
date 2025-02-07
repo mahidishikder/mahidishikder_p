@@ -16,17 +16,17 @@ function Skills() {
   ];
 
   return (
-    <div className="bg-gray-100 py-30">
+    <div className="bg-gray-100 py-30 ">
       <div className="container mx-auto px-6 md:px-12">
-        <h2 className="text-4xl font-semibold text-center text-[#3B63FB] underline-offset-8 underline mb-20">
+        <h2 className="text-4xl font-semibold text-center  text-[#3B63FB] underline-offset-8 underline mb-20">
           Skills
         </h2>
 
-        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+        <div className="grid grid-cols-1   md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center transition-all duration-300 transform hover:scale-105 hover:bg-[#3B63FB] hover:text-white hover:shadow-lg"
+              className="bg-white p-6 border-r-2 border-t-2 border-[#3B63FB] rounded-lg shadow-md flex flex-col items-center transition-all duration-300 transform hover:scale-105 hover:bg-[#3B63FB] hover:text-white hover:shadow-lg"
             >
               <div className="text-4xl">{skill.icon}</div>
               <h3 className="mt-3 text-xl font-semibold">{skill.name}</h3>

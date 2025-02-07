@@ -6,7 +6,7 @@ function AboutMe() {
       <div className="container mx-auto px-6 md:px-12">
         {/* Title Section */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-semibold text-[#3B63FB] underline-offset-8 underline mb-4">
+          <h2 className="text-4xl mb-20 font-semibold text-[#3B63FB] underline-offset-8 underline ">
             About Me
           </h2>
         </div>

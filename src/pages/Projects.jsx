@@ -67,7 +67,7 @@ function Projects() {
               <h3 className="text-2xl font-semibold text-gray-900 mb-3">{project.name}</h3>
               <p className="text-gray-600 mb-4">{project.description}</p>
               <a
-                href={`/projects/${project.id}`}
+                href={`/projectDetails/${project.id}`}
                 className="block text-center bg-[#3B63FB] text-white py-2 px-4 rounded-md hover:bg-[#2a4bd8] transition duration-300"
               >
                 View More

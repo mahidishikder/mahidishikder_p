@@ -7,6 +7,7 @@ import { SlSocialFacebook } from "react-icons/sl";
 import { CiLinkedin } from "react-icons/ci";
 import { BsTwitterX } from "react-icons/bs";
 import { ImGithub } from "react-icons/im";
+import { PiDownloadSimpleDuotone } from "react-icons/pi";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,12 +37,12 @@ function Header() {
   );
 
   return (
-    <div className="bg-white fixed  top-0 left-0 w-full z-50 shadow-md">
+    <div className="bg-white fixed top-0 left-0 w-full z-50 shadow-md">
       <div className="container mx-auto navbar px-4 lg:px-8">
         {/* Navbar Start */}
         <div className="navbar-start">
           {/* Logo */}
-          <img src="https://i.ibb.co.com/2rk80jY/Untitled-design-6.png" alt="" />
+          <img src="https://i.ibb.co.com/2rk80jY/Untitled-design-6.png" alt="Logo" />
         </div>
 
         {/* Navbar Center */}
@@ -55,13 +56,17 @@ function Header() {
         <div className="navbar-end flex items-center gap-4">
           {/* Mobile Menu Button (Right Side) */}
           <div className="lg:hidden">
-            <button onClick={toggleMenu} className="">
+            <button onClick={toggleMenu}>
               {isOpen ? <AiOutlineClose size={28} /> : <RiMenu3Line className="font-bold" size={28} />}
             </button>
           </div>
 
           {/* Desktop Resume Button */}
-          <a className="hidden lg:block bg-[#3B63FB] py-2 px-4 text-md font-medium text-white rounded hover:bg-[#2858B5] transition-all duration-300">
+          <a
+            href="../../public/resume.pdf"  // Path to your resume file
+            download
+            className="hidden lg:block items-center gap-2 bg-[#3B63FB] py-2 px-4 text-md font-medium text-white rounded hover:bg-[#2858B5] transition-all duration-300"
+          >
             Resume
           </a>
         </div>
@@ -81,16 +86,21 @@ function Header() {
               {links}
               {/* Mobile Resume Button */}
               <li className="mt-3">
-                <a className="bg-[#3670EC] py-2 px-4 text-md font-medium text-white rounded hover:bg-[#2858B5] transition-all duration-300">
+                <a
+                  href="../../public/resume.pdf"  // Path to your resume file
+                  download
+                  className="bg-[#3670EC] flex items-center gap-2 py-2 px-4 text-md font-medium text-white rounded hover:bg-[#2858B5] transition-all duration-300"
+                >
+                  <PiDownloadSimpleDuotone className="text-lg" />
                   Resume
                 </a>
               </li>
               <div className="flex mt-14 gap-4 justify-center md:justify-start mb-6">
-              <SlSocialFacebook className="text-2xl" />
-              <CiLinkedin className="text-2xl"/>
-              <BsTwitterX className="text-2xl"/>
-              <ImGithub className="text-2xl"/>
-          </div>
+                <SlSocialFacebook className="text-2xl" />
+                <CiLinkedin className="text-2xl" />
+                <BsTwitterX className="text-2xl" />
+                <ImGithub className="text-2xl" />
+              </div>
             </ul>
           </motion.div>
         )}
